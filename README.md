@@ -20,3 +20,9 @@ I was tempted to go with it based off the summary report article I read, the kag
 
 So I need the header element for the 4 suggested charts, with a dropdown element that selects the charts, a comparison of X chart to Y chart element in the header, and a data element which looks just to be an individual summary of each of the four.
 All four seem to require a summary paragraph and so will need to do that for the other 4 charts as well.
+
+Got the charts made, found a somewhat similar dataset that looked at social and economic indicators of cities all over the globe, its 257 so about half the size of the weather data, same concept really, just look at latitudes effect on a variety of indicators, which I know
+is going to have some correlation just because of the disparities between the global north and the global south, not going to try to incorporate it all into one dataset, besides city name and lat lng values there really is nothing in common between the two sets in terms of other columns. This dataset comes from Orhan Karaman's 'City Quality of Life Dataset' found on Kaggle, link("https://www.kaggle.com/orhankaramancode/city-quality-of-life-dataset"). Its about 20 years more uptodate then the weather one listed in the resources, 
+this one being published less then a year ago and the time stamps from the  weather one seem to be early 2000's. Got all the Charts to run as in a jupyter notebook, exported the png's and uploaded the notebook. 
+
+Got a bit of the way thru the index.html, got an icon, a name of the site situated on the left, and on the right of the header are the 'data','comparisonss', and three drop down menus, 'latitude weather plots', 'latitude social plots', and 'latitude economic plots'.
