@@ -17,3 +17,6 @@ I say, let it be thus.
 
 Okay but seriously, if we stop using a latin text script placeholder for future content, ill stop pontificating old testiment style. Things to do, populate the 4 charts as the instructions specify, they're all static it seems, derived from a csv. Second step is to find a dataset that will server the purposes of the bonus challenge, Google's datasearch had a really interesting analysis of online datsets using dataset search, published in part, as a dataset (link) https://www.kaggle.com/googleai/dataset-search-metadata-for-datasets,
 I was tempted to go with it based off the summary report article I read, the kaggle metadataset is actually 11.43 GB so that snuffed out that idea rather quickly, even if it meta-ness made the idea appealing, think I'll go with a water quality dataset, sort of fits the theme of the suggested data which was weather.
+
+So I need the header element for the 4 suggested charts, with a dropdown element that selects the charts, a comparison of X chart to Y chart element in the header, and a data element which looks just to be an individual summary of each of the four.
+All four seem to require a summary paragraph and so will need to do that for the other 4 charts as well.
