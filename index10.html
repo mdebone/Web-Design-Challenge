@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>web-homework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <div class="col-4">
+                <a class="navbar-brand" href="#">
+                    <img src="Resources/city.png" alt="" style="width:40px;" class="rounded-pill">
+                    Latitude Metrics
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col-8">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Latitude Economic Plots
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Startups</a></li>
+                            <li><a class="dropdown-item" href="#">Business Freedom</a></li>
+                            <li><a class="dropdown-item" href="#">Economy</a></li>
+                            <li><a class="dropdown-item" href="#">Taxation</a></li>
+                            <li><a class="dropdown-item" href="#">Internet Access</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Latitude Social Plots
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Cost of Living</a></li>
+                            <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                            <li><a class="dropdown-item" href="#">Education</a></li>
+                            <li><a class="dropdown-item" href="#">Environmental Quality</a></li>
+                            <li><a class="dropdown-item" href="#">Tolerance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-menu dropdown-menu-dark" href="#" id="navbarDarkDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Latitude Weather Plots
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#" target="_blank">Max Temperature</a></li>
+                            <li><a class="dropdown-item" href="#" target="_blank">Humidity</a></li>
+                            <li><a class="dropdown-item" href="#" target="_blank">Cloudiness</a></li>
+                            <li><a class="dropdown-item" href="#" target="_blank">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container content">
+        <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <div class="box">
+                    <h2 class="title">Summary: Latitude vs. X</h2>
+                    <hr class="light">
+                    <img src="Resources/lat_temp.png" alt="Max Temperature" class="vizualizations rounded float-left">
+                    <p>The purpose of this project was to analyze how weather changes asa you get closter to the
+                        equator. To accomplish this, we first pulled data from the OpenWeatherMap API to asemble a
+                        dataset on over 500 cities.</p>
+                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
+                        latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This
+                        site provides the source data and visualizaations created as part of the analysis, as well as
+                        explanations and descriptions of any trends and correlations witnessed.</p>
+                    <p>As a further level of analysis, another daataset of over 250 cities was analyzed to see if there
+                        were any correlations between latitude and social and economic measures to discern if there were
+                        any underlying trends.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-12">
+            <div class="box">
+                <h3 class="title">Visualizations</h3>
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="title">Latitude vs. Max Temperature</div>
+                            <a href="webVisualizations/temperature.html">
+                                <img class="panel" src="Resources/lat_temp.png" alt="Max Temperature Graph">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="title">Latitude vs. Humidity</div>
+                        <a href="webVisualizations/humidity.html">
+                            <img class="panel" src="Resources/lat_hum.png" alt="Humidity Graph">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="title">Latitude vs. Cloudiness</div>
+                        <a href="webVisualizations/cloudiness.html">
+                            <img class="panel" src="Resources/lat_cloud.png" alt="Cloudiness Graph">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="title">Latitude vs Wind Speed</div>
+                    <a href="webVisualizations/wind.html">
+                        <img class="panel" src="Resources/lat_speed.png" alt="Windiness Graph">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer> Web Design Challenge: Matt DeBone</footer>
+</body>
+
+</html>
