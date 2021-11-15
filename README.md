@@ -26,3 +26,19 @@ is going to have some correlation just because of the disparities between the gl
 this one being published less then a year ago and the time stamps from the  weather one seem to be early 2000's. Got all the Charts to run as in a jupyter notebook, exported the png's and uploaded the notebook. 
 
 Got a bit of the way thru the index.html, got an icon, a name of the site situated on the left, and on the right of the header are the 'data','comparisonss', and three drop down menus, 'latitude weather plots', 'latitude social plots', and 'latitude economic plots'.
+
+Okay so I figured out why my index would work but the rest of my duitfully created various plots, turns out it was that the bootstrap.css was in the base folder, as was the index10.html, which was also in there, so when I would live load the landingpage, which was all the index10 was, it would naturally load.
+What I hadn't figured out was that the visualizations pages, all of the various htmls that I was told to create, like the data, comparisons and the other tabs, were nested in the visualizations folder. 
+I couldn't navigate to them on click like I was supposed to be able to because they had the wrong reference point. Life lesson learned.
+
+I put the bootstrap css folder in the correct folder, and  went thru all of the href links and added to the front of every one of them a ./example.html inside the quotes, and it liked that.
+On load of any page, I would be able to navigate to another page. great. 
+This also solved all of my headscratchting as to why none of the dutifully created, and hopefully appreciated to you dear grader at central, the plots in the theme of the rest of the web page. so the text is in the correct color and the numbers of of x and y's and because they are all scatter
+the points are in the correct color, ie the secondary theme color of the package that I went with which is 'Morph' a Bootswatch template, but they say that you just call it like a bootstrap template but I figured I would give credit where credit is due. 
+
+From there it was just a bunch of corrections, to make sure that it loaded on a small screen I checked thru my phone and it does, and then I went back and pruned the rest of the indexing system so that the working directory is a lot cleaner.
+I also realized that I was using the div class row function too spairingly when looking at the templates, each of the comparison charts are supposed to load one on left and one on right
+but because it thought that it was all in the same row they were printing over one another. Got that fixed, 
+and then I had to go back and make sure that the header was being called correctly in each of the pages, and that the links would work. they all do although I am having some trouble with the dropdown links still, to no avail.
+
+Im going to publish and resubmit the pages to githubpages and ask the tutor or ta about why my drop down menus won't load, other than that its a pretty functional website and looks pretty nice.
