@@ -42,3 +42,4 @@ but because it thought that it was all in the same row they were printing over o
 and then I had to go back and make sure that the header was being called correctly in each of the pages, and that the links would work. they all do although I am having some trouble with the dropdown links still, to no avail.
 
 Im going to publish and resubmit the pages to githubpages and ask the tutor or ta about why my drop down menus won't load, other than that its a pretty functional website and looks pretty nice.
+Got the drop down menu's working, called bootstrap 5.1 as a js library that my tutor helped me download and just like that all of the dropdown menus were populating and functioning as intended. updated github.
